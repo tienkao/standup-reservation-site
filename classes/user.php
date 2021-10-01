@@ -30,10 +30,10 @@ class User extends Database{
                     $_SESSION['role'] =$user_row['role'];
 
                     if($user_row['role'] == 'customer'){
-                        header("location: ../views/show-lists.php");
+                        header("location: ../views/user-show-list.php");
                         exit;
                     }else{
-                        header("location: ../views/staff-show-lists.php");
+                        header("location: ../views/staff-dashboard.php");
                         exit;
                     }
                     

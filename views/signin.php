@@ -8,14 +8,22 @@
 
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <style>
+    body{
+      background-image: url("../img/laugh.jpg");
+      background-size: 1500px;
+      background-attachment: fixed;
+      background-position: center center;
+    }
+  </style>
   </head>
-  <body class="w-25 mx-auto mt-5 text-light">
-      <div class="container">
-          <div class="card">
+  <body>
+  <?php include "main-menu-1.php" ?>
+      <div class="container w-25 mx-auto mt-5 text-light">
+          <div class="card ">
               <div class="card-body">
                   <div class="pb-5">
-                      <h1>Sign In</h1>
+                      <h1 class="text-dark">Sign In</h1>
                   </div>
           <form action="../actions/signin.php" method="post">
               
